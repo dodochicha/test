@@ -1,13 +1,11 @@
 import axios from "axios";
 
 const API_ROOT =
-  process.env.NODE_ENV === "production"
-    ? "/api"
-    : "http://localhost:4000/api";
+  process.env.NODE_ENV === "production" ? "/api" : "http://localhost:4000/api";
 
 const WS_URL =
   process.env.NODE_ENV === "production"
-    ? window.location.origin.replace(/^https*/, "ws")
+    ? window.location.origin.replace(/^https*/, "wss")
     : "ws://localhost:4000";
 
 export const api = axios.create({ baseURL: API_ROOT });
