@@ -5,8 +5,10 @@ import cors from "cors";
 import WebSocket from "ws";
 
 const app = express();
+app.use(cors());
 // init middleware
 if (process.env.NODE_ENV === "development") {
+  console.log("develope");
   app.use(cors());
 }
 // define routes
