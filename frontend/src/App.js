@@ -7,18 +7,18 @@ import WebsocketNumber from "./components/WebsocketNumber";
 
 function App() {
   return (
-    // <Stack
-    //   sx={{ width: "100%" }}
-    //   spacing={2}
-    //   direction="column"
-    //   alignItems="center"
-    // >
-    //   <img src={logo} alt="logo" style={{ width: "100px", height: "100px" }} />
-    //   <ClientCounter />
-    //   <ServerMessage />
-    //   <WebsocketNumber />
-    // </Stack>
-    <div>hello world</div>
+    <Stack
+      sx={{ width: "100%" }}
+      spacing={2}
+      direction="column"
+      alignItems="center"
+    >
+      <img src={logo} alt="logo" style={{ width: "100px", height: "100px" }} />
+      <ClientCounter />
+      <ServerMessage />
+      <WebsocketNumber />
+    </Stack>
+    // <div>hello world</div>
   );
 }
 
