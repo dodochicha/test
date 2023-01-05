@@ -32,7 +32,7 @@ const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
   console.log(`Server is up on port ${port}.`);
 });
-
+console.log(WebSocket.Server);
 const wss = new WebSocket.Server({ server });
 
 wss.on("connection", (ws) => {
